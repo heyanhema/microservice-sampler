@@ -5,6 +5,10 @@
 /unused
 **/.DS_Store
 
+**/.project
+**/.classpath
+**/.settings/
+
 # File Patterns
 *.class
 *.iml

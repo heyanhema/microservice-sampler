@@ -4,7 +4,11 @@ import java.io.Serializable;
 
 public abstract class AbstractEvent implements Serializable {
 
-    private String id;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5347844559410520231L;
+	private String id;
 
     public AbstractEvent() {}
 

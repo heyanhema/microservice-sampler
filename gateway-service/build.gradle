@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.3.5.RELEASE'
+		springBootVersion = '1.4.4.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -12,7 +12,7 @@ buildscript {
 }
 
 group = 'benwilcock'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 apply plugin: 'docker'
 
 jar {
@@ -37,12 +37,12 @@ dependencies {
 
 dependencyManagement {
 	imports { 
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Brixton.SR1" 
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.SR5" 
 	}
 }
 
 task wrapper(type: Wrapper) {
-	gradleVersion = '2.3'
+	gradleVersion = '2.9'
 }
 
 task image(type: Docker, dependsOn: build){

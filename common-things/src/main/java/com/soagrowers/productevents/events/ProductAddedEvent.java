@@ -4,7 +4,11 @@ package com.soagrowers.productevents.events;
 public class ProductAddedEvent extends AbstractEvent {
 
 
-    private String name;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8465037689330943899L;
+	private String name;
 
     public ProductAddedEvent() {
     }
